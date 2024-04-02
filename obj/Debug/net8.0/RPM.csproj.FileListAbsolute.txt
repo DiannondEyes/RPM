@@ -12,3 +12,4 @@
 /home/malw/Документы/RPM/obj/Debug/net8.0/RPM.pdb
 /home/malw/Документы/RPM/obj/Debug/net8.0/RPM.genruntimeconfig.cache
 /home/malw/Документы/RPM/obj/Debug/net8.0/ref/RPM.dll
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.sourcelink.json
