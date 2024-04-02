@@ -1,3 +1,4 @@
 ﻿using RPM;
 
-Laba2.Run();
+// Laba2.Run();
+CalcSqrt.Run();
