@@ -1,0 +1,14 @@
+/home/malw/Документы/RPM/bin/Debug/net8.0/RPM
+/home/malw/Документы/RPM/bin/Debug/net8.0/RPM.deps.json
+/home/malw/Документы/RPM/bin/Debug/net8.0/RPM.runtimeconfig.json
+/home/malw/Документы/RPM/bin/Debug/net8.0/RPM.dll
+/home/malw/Документы/RPM/bin/Debug/net8.0/RPM.pdb
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.GeneratedMSBuildEditorConfig.editorconfig
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.AssemblyInfoInputs.cache
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.AssemblyInfo.cs
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.csproj.CoreCompileInputs.cache
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.dll
+/home/malw/Документы/RPM/obj/Debug/net8.0/refint/RPM.dll
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.pdb
+/home/malw/Документы/RPM/obj/Debug/net8.0/RPM.genruntimeconfig.cache
+/home/malw/Документы/RPM/obj/Debug/net8.0/ref/RPM.dll
