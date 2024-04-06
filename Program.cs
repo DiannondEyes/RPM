@@ -1,4 +1,6 @@
 ﻿using RPM;
 
+// Laba1.Run();
+// CalcSqrt.Run();
 // Laba2.Run();
-CalcSqrt.Run();
+Laba3.Run();

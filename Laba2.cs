@@ -1,31 +1,38 @@
 namespace RPM {
     public class Laba2 {
+
+        public enum Weekday {
+            Понедельник = 1,
+            Вторник,
+            Среда,
+            Четверг,
+            Пятница,
+            Суббота,
+            Воскресенье
+        }
+
+        public enum TimeOfDay {
+            Утро = 7,
+            День = 13,
+            Вечер = 19,
+            Ночь = 0
+        }
+        
         public static void Run() {
-            Console.Write("Введите x: ");
-            double x;
-            try {
-                x = Convert.ToDouble(Console.ReadLine());
-                if (x >= -1) throw new Exception();
-            } catch {
-                Console.WriteLine("Введите число X, который < -1!");
-                return;
-            }
-            Console.Write("Введите конечное значение n: ");
+            Console.Write("Введите день недели цифрой (1-7): ");
+            string? day = Enum.GetName(typeof(Weekday), Convert.ToInt32(Console.ReadLine()));
 
-            int n2;
-            try {
-                n2 = Convert.ToInt32(Console.ReadLine());
-                if (n2 <= 0) throw new Exception();
-            } catch {
-                Console.WriteLine("Введите положительное число N!");
-                return;
-            }
-
-            double result = 0;
-            for (int n = 0; n <= n2; n++) {
-                result += Math.Pow(-1, n + 1) / ((2 * n + 1) * Math.Pow(x, 2 * n + 1));
-            }
-            Console.WriteLine(-Math.PI / 2 + result);
+            Console.Write("Введите час (0-23): ");
+            int? hour = Convert.ToInt32(Console.ReadLine());
+            if (hour >= (int)TimeOfDay.Утро && hour < (int)TimeOfDay.День)
+                hour = 7;
+            else if (hour >= (int)TimeOfDay.День && hour < (int)TimeOfDay.Вечер)
+                hour = 13;
+            else if (hour >= (int)TimeOfDay.Вечер || hour < (int)TimeOfDay.Утро)
+                hour = 19;
+            else hour = 0;
+            
+            Console.WriteLine($"Сейчас {day ?? "неверный день недели"}, {Enum.GetName(typeof(TimeOfDay), hour)}");
         }
     }
 }
