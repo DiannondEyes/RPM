@@ -23,16 +23,20 @@ namespace RPM {
             string? day = Enum.GetName(typeof(Weekday), Convert.ToInt32(Console.ReadLine()));
 
             Console.Write("Введите час (0-23): ");
-            int? hour = Convert.ToInt32(Console.ReadLine());
+            int hour = Convert.ToInt32(Console.ReadLine());
             if (hour >= (int)TimeOfDay.Утро && hour < (int)TimeOfDay.День)
                 hour = 7;
             else if (hour >= (int)TimeOfDay.День && hour < (int)TimeOfDay.Вечер)
                 hour = 13;
-            else if (hour >= (int)TimeOfDay.Вечер || hour < (int)TimeOfDay.Утро)
+            else if (hour >= (int)TimeOfDay.Вечер && hour < 23)
                 hour = 19;
-            else hour = 0;
-            
+            else if (hour == 23 || (hour >= (int)TimeOfDay.Ночь && hour < (int)TimeOfDay.Утро))
+                hour = 0;
+            else {
+                Console.WriteLine("Неверный час!");
+                return;
+            }
             Console.WriteLine($"Сейчас {day ?? "неверный день недели"}, {Enum.GetName(typeof(TimeOfDay), hour)}");
-        }
+        } 
     }
 }
