@@ -6,5 +6,8 @@
 // Laba3.Run();
 // TrainUsage.Run();
 // Laba4.Run();
-Laba5.Run();
-Laba6.Run();
+// Laba5.Run();
+// Laba6.Run();
+// Laba7.Run();
+// Laba8.Run();
+ComplexNumberUsage.Run();

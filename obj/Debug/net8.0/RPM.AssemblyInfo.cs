@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6daf3ed6736ed4609d47626bf263e3a65b40011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+325340b7a9419a14f95474069db74bb1e7412ad5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
