@@ -1,4 +1,3 @@
-using System.Numerics;
 using System.Text.RegularExpressions;
 
 namespace RPM {
@@ -19,6 +18,7 @@ namespace RPM {
                 secondnumber = Convert.ToInt32(value[(value.IndexOf('+') + 1)..(value.Length - 1)]);
             }
         }
+
         // public static implicit operator ComplexNumber(string value) {
         //     return new ComplexNumber(value);
         // }
@@ -36,6 +36,14 @@ namespace RPM {
             int secondsub = a.secondnumber - b.secondnumber;
             return new ComplexNumber($"{a.firstnumber - b.firstnumber}{(secondsub > 0 ? '+' : "")}{secondsub}i");
         }
+
+        public static ComplexNumber operator *(ComplexNumber a, ComplexNumber b) {
+            int secondsub = a.firstnumber * b.secondnumber + a.secondnumber * b.firstnumber;
+            return new ComplexNumber($"{a.firstnumber * b.firstnumber - a.secondnumber * b.secondnumber}{(secondsub >= 0 ? "+" : "")}{secondsub}i");
+        }
+
+        public static ComplexNumber operator /(ComplexNumber a, ComplexNumber b) {
+        }
     }
 
     public class ComplexNumberUsage {
@@ -46,7 +54,9 @@ namespace RPM {
             Console.WriteLine(new ComplexNumber("-57-2i"));
             Console.WriteLine(new ComplexNumber("2-5i"));
             Console.WriteLine(new ComplexNumber("1+2i") + new ComplexNumber("2+3i"));
-            Console.WriteLine(new ComplexNumber("-45+3i") + new ComplexNumber("2-5i"));
+            Console.WriteLine(new ComplexNumber("-45+3i") - new ComplexNumber("2-5i"));
+
+            Console.WriteLine(new ComplexNumber("-45+3i") - new ComplexNumber("2-5i"));
 
             Console.Write("Введите комплексное число для проверки на правильность: ");
             try {
