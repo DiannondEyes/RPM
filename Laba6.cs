@@ -8,7 +8,7 @@ namespace RPM {
     }
 
 
-    abstract class Car(int speed, int capacity, int distance) : Transport(speed, capacity, distance) {
+    abstract class Automobile(int speed, int capacity, int distance) : Transport(speed, capacity, distance) {
         public override string ToString() {
             return $"Автомобиль со скоростью {speed}, грузоподъемностью {capacity}. Дальность расстояния, которое он может проехать: {distance}";
         }
@@ -35,7 +35,7 @@ namespace RPM {
         public abstract void Sail();
     }
 
-    class Juke(int speed, int capacity, int distance) : Car(speed, capacity, distance) {
+    class Juke(int speed, int capacity, int distance) : Automobile(speed, capacity, distance) {
         public override string ToString() {
             return $"Nissan Juke со скоростью {speed}, грузоподъемностью {capacity}. Дальность расстояния, которое он может проехать: {distance}";
         }

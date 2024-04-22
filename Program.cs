@@ -10,4 +10,5 @@
 // Laba6.Run();
 // Laba7.Run();
 // Laba8.Run();
-ComplexNumberUsage.Run();
+// ComplexNumberUsage.Run();
+Laba9.Run();
