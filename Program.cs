@@ -11,4 +11,8 @@
 // Laba7.Run();
 // Laba8.Run();
 // ComplexNumberUsage.Run();
-Laba9.Run();
+// Laba9.Run();
+// Laba10.Run();
+// Laba11.Run();
+// Laba12.Run();
+PyramidSortUsage.Run();

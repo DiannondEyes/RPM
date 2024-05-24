@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJaKHs6fmEfAvFQeqLc21QXdwZQ9u3n9BKidUb5QYVa50LkTcOZVsQnSuC9kTvo/asxUJNpXw/2HFT4wvbiaFQ==",
+  "dgSpecHash": "HYovrDXA1Jz/wONU7y/2L7laE/BZREzQC6fQxojDXqMI0+Bz1jiuRqD3cG7uMmhOkdeXgA/v1gHufI10DesMZQ==",
   "success": true,
-  "projectFilePath": "/home/malw/Документы/RPM/RPM.csproj",
-  "expectedPackageFiles": [
-    "/home/malw/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.2/microsoft.aspnetcore.app.ref.8.0.2.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\malw\\Documents\\RPM\\RPM.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
